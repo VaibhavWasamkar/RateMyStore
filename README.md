@@ -256,7 +256,7 @@ store-rating-app/
 
 ```bash
 git clone https://github.com/VaibhavWasamkar/RateMyStore
-cd store-rating-app
+cd RateMyStore
 ```
 
 ---
