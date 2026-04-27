@@ -255,7 +255,7 @@ store-rating-app/
 ### 1️. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/store-rating-app.git
+git clone https://github.com/VaibhavWasamkar/RateMyStore
 cd store-rating-app
 ```
 
