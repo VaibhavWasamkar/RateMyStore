@@ -1,0 +1,80 @@
+/* 🌈 Animated Gradient Background */
+.home {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #0ea5e9, #6366f1, #22c55e);
+    background-size: 400% 400%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px 10px 20px;
+    color: white;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin: 0 0 35px 0;
+}
+
+.hero p {
+    opacity: 0.85;
+    margin: 15px 0 0 0;
+}
+
+.getStarted-btn {
+    background: #f0f1ff;
+    color: #6366f1;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.getStarted-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.feature-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+    letter-spacing: 0.5px;
+}
+
+.feature-card p {
+    color: #e7e9ff;
+}

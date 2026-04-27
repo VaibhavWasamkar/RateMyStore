@@ -1,0 +1,148 @@
+/* 🌈 Animated Gradient Background */
+.home {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #0ea5e9, #6366f1, #22c55e);
+    background-size: 400% 400%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px 20px 10px 20px;
+    color: white;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin: 0 0 35px 0;
+}
+
+.hero h3 {
+    font-size: 34px;
+    font-weight: 400;
+    margin: 35px 0 0 0;
+}
+
+.hero p {
+    opacity: 0.85;
+    margin: 15px 0 0 0;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.feature-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+    letter-spacing: 0.5px;
+}
+
+.feature-card p {
+    color: #e7e9ff;
+}
+
+/* large card */
+.feature-card.large {
+  width: 100%; /* 🔥 exactly 3 per row */
+  max-width: 350px;
+  overflow-y: auto;
+}
+
+/* scrollable list */
+.rating-list {
+  margin-top: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* row */
+.rating-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* hover */
+.rating-row:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* form inside feature card */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.auth-form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.25);
+  color: white;
+}
+
+.auth-form input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.auth-form input:focus {
+  background: rgba(255,255,255,0.35);
+}
+
+/* button */
+.auth-btn {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: white;
+  color: #6366f1;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* success */
+.success-msg {
+  background: rgba(34,197,94,0.2);
+  color: #bbf7d0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* error */
+.error {
+  color: #ffdede;
+  font-size: 12px;
+  text-align: left;
+}

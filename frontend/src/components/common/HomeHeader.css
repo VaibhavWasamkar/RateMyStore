@@ -1,0 +1,58 @@
+/* HEADER */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 25px; /* 🔥 space between Register & Login */
+    align-items: center;
+}
+
+/* LOGIN TEXT BUTTON */
+.login-btn {
+    background: transparent;
+    border: none;
+    color: #e3e5fe;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+}
+
+/* underline animation */
+.login-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #e3e5fe;
+    transition: width 0.3s ease;
+}
+
+/* hover effect */
+.login-btn:hover {
+    color: white;
+}
+
+.login-btn:hover::after {
+    width: 100%;
+}

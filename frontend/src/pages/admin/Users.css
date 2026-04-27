@@ -1,0 +1,227 @@
+/* PAGE */
+.users-page {
+    padding: 20px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* HEADER */
+.page-header h2 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.users-wrapper {
+    min-height: calc(100vh - 120px);
+    /* subtract header space */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.users-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 25px;
+    align-items: start;
+    width: 100%;
+    max-width: 1200px;
+    /* 🔥 important for layout */
+
+  align-items: stretch; /* 🔥 important */
+}
+
+/* GLASS CARD */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.1),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* CARD TITLES */
+.card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* FORM SAME AS REGISTER */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* wrapper */
+.select-wrapper {
+    position: relative;
+}
+
+/* custom arrow */
+.select-wrapper::after {
+    content: "⏷";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+.form-card,
+.table-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 🔥 vertical center */
+}
+
+/* INPUTS */
+.auth-form input,
+.auth-form select {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+
+    transition: all 0.3s ease;
+}
+
+/* placeholder */
+.auth-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* SELECT FIELD */
+.auth-form select {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    /* space for arrow */
+
+    appearance: none;
+    /* 🔥 remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    cursor: pointer;
+}
+
+/* focus */
+.auth-form input:focus,
+.auth-form select:focus {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+/* SELECT FIX */
+.auth-form select option {
+    color: black;
+}
+
+/* BUTTON (same as register/login) */
+.auth-btn {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+
+    background: white;
+    color: #6366f1;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ACTION AREA */
+.form-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.password-field {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.password-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 40px;
+  margin-bottom: 0; /* important */
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 12px;
+  color: #e0e7ff;
+}
+
+.eye-icon:hover {
+  color: white;
+}
+
+/* TABLE CARD OVERRIDE */
+.card:last-child {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* OPTIONAL: table styling sync */
+.table-container,
+table {
+    background: transparent;
+    color: white;
+}
+
+/* ROW HOVER */
+table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.error {
+    color: #ffdede;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .users-content {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        flex-direction: column;
+    }
+}

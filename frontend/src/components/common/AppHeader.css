@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    /* 🔥 space between Register & Login */
+    align-items: center;
+}
+
+/* NAV TEXT BUTTON */
+.nav-btn {
+    background: transparent;
+    border: none;
+    color: #e3e5fe;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+}
+
+/* underline animation */
+.nav-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #e3e5fe;
+    transition: width 0.3s ease;
+}
+
+/* hover effect */
+.nav-btn:hover {
+    color: white;
+}
+
+.nav-btn:hover::after {
+    width: 100%;
+}
+
+/* wrapper */
+.user-menu {
+    position: relative;
+}
+
+/* avatar circle */
+.avatar {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #6366f1;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(45deg, #0ea5e9, #6366f1);
+  color: #e3e5fe;
+  font-weight: 600;
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+/* hover effect */
+.avatar:hover {
+  color: white;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.avatar.open {
+  color: white;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* dropdown box */
+.dropdown {
+    position: absolute;
+    top: 70px;
+    right: 0;
+
+
+    backdrop-filter: blur(10px);
+    background: #7D89F4;
+    color: #e3e5fe;
+
+    border-radius: 10px;
+    padding: 0px 20px 20px 20px;
+    min-width: 220px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+    justify-content: center !important;
+    color: White;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* row */
+.dropdown-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+}

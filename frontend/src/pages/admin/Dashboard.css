@@ -1,0 +1,163 @@
+/* PAGE BACKGROUND */
+.dashboard {
+  padding: 40px;
+}
+
+/* ===== STATS ===== */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: #4f46e5;
+  color: white;
+  padding: 25px;
+  border-bottom: 1px solid rgba(255,255,255,0.7);
+  border-radius: 16px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 10px 30px rgba(99,102,241,0.3);
+  transition: 0.3s;
+}
+
+.stat-card b {
+  font-size: 28px;
+  display: block;
+  margin-top: 8px;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== CHARTS ===== */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.chart-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.chart-card h4 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #e0e7ff;
+}
+
+.chart-card:hover {
+  transform: translateY(-3px);
+}
+
+.chart-desc {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+}
+
+/* ===== LEADERBOARD ===== */
+.leaderboard {
+  margin-top: 40px;
+}
+
+.leaderboard h3 {
+  margin-bottom: 15px;
+  color: #e0e7ff;
+}
+
+/* TOP 3 */
+.leader-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* highlight ranking */
+.leader-card {
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  box-shadow: 0 10px 30px rgba(99,102,241,0.3);
+  transition: 0.3s;
+}
+
+.leader-card:nth-child(1) {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24); /* 🥇 gold */
+}
+
+.leader-card:nth-child(2) {
+  background: linear-gradient(135deg, #94a3b8, #cbd5f5); /* 🥈 silver */
+  color: #1e293b;
+}
+
+.leader-card:nth-child(3) {
+  background: linear-gradient(135deg, #b45309, #f97316); /* 🥉 bronze */
+}
+
+.leader-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* SCROLL LIST */
+.leader-list {
+  margin-top: 20px;
+  max-height: 240px;
+  overflow-y: auto;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+/* rows */
+.leader-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding: 12px;
+  color: #e0e7ff;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: 0.2s;
+}
+
+.leader-row:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* ===== SCROLLBAR (nice touch) ===== */
+.leader-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.leader-list::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leader-top {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+}

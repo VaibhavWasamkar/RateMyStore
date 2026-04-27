@@ -1,0 +1,170 @@
+/* 🌈 BACKGROUND */
+.user-page {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #0ea5e9, #6366f1, #22c55e);
+  background-size: 400% 400%;
+  font-family: 'Gill Sans', Calibri, sans-serif;
+}
+
+/* CONTAINER */
+.user-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADER */
+.page-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.page-header h2 {
+  color: white;
+  font-size: 28px;
+}
+
+.page-header p {
+  color: rgba(255,255,255,0.7);
+}
+
+/* SEARCH BAR */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* INPUT */
+.search-bar input {
+  width: 300px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.25);
+  color: white;
+}
+
+/* PLACEHOLDER */
+.search-bar input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* BUTTONS */
+.search-btn,
+.reset-btn {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* SEARCH */
+.search-btn {
+  background: white;
+  color: #6366f1;
+}
+
+.search-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* RESET */
+.reset-btn {
+  background: rgba(255,255,255,0.3);
+  color: white;
+}
+
+.reset-btn:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+/* STORE WRAPPER */
+.store-wrapper {
+  margin-top: 20px;
+}
+
+.store-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* normal alignment */
+}
+
+/* 💎 GLASS CARD */
+.store-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 18px;
+
+  color: white;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* HOVER */
+.store-card:hover {
+  transform: translateY(-5px) scale(1.01);
+}
+
+/* NAME */
+.store-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ADDRESS */
+.store-address {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* RATINGS */
+.store-ratings {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* AVG */
+.avg-rating {
+  color: #fde68a; /* gold */
+  font-weight: 600;
+}
+
+/* USER */
+.user-rating {
+  color: #c7d2fe;
+}
+
+/* STAR SECTION */
+.rating-stars {
+  margin-top: 5px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 🔥 centers last row */
+  gap: 20px;
+}
+
+.feature-card.large {
+  width: calc((100% - 40px) / 3);
+  max-width: 350px;
+}
